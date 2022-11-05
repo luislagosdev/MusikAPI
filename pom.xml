@@ -26,11 +26,18 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- Pass the mouse cursor over "mysql-connector-j"  to see the MySQL version
+          that was installed by default, we may want to change the version to the one we need-->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
+            <!--   L: if we need to change the version, use this and delete  <scope>runtime</scope>
+            <version>5.1.47</version>
+            -->
         </dependency>
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

@@ -11,7 +11,7 @@ public class Album {
 
     // set the primary key
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)     // NO need to send ID number in POST method, ids added automatically
     private Integer id;
 
     private String titulo;

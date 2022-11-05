@@ -19,7 +19,14 @@ public class AlbumsService implements IAlbumsService {
 
     @Override
     public List<Album> buscarTodos() {
-        // this method returns all the records from the DB
+        // GET: this method returns all the records from the DB
         return repoAlbums.findAll();
     }
+
+    // POST
+    @Override
+    public void guardar(Album album) {
+        repoAlbums.save(album);
+    }
+
 } // interface

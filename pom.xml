@@ -46,6 +46,7 @@
     </dependencies>
 
     <build>
+        <finalName>musikapi</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

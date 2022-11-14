@@ -25,8 +25,13 @@ public class AlbumsController {
     @PostMapping("/albums")
     public Album guardar(@RequestBody Album album) {    // @RequestBody --> look in the body for JSON data and
         serviceAlbums.guardar(album);                   // execute the data-binding to the object of that type
-
         return album;   // return the same object that we receive as parameter
+    }
+
+    @PutMapping("/albums")                               // to update the DB
+    public Album modificar(@RequestBody Album album) {     // data is sent in the body and converted to JSON automatically
+        serviceAlbums.guardar(album);
+        return album;
     }
 
 } // class

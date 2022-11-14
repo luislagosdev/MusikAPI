@@ -34,4 +34,10 @@ public class AlbumsController {
         return album;
     }
 
+    @DeleteMapping("/albums/{id}")   // send in the url the id to be deleted
+    public String eliminar(@PathVariable("id") int idAlbum) {
+        serviceAlbums.eliminar(idAlbum);
+        return "Eliminated Record";     //show a message about deleted record
+    }
+
 } // class

@@ -29,4 +29,9 @@ public class AlbumsService implements IAlbumsService {
         repoAlbums.save(album);
     }
 
+    @Override
+    public void eliminar(int idAlbum) {
+        repoAlbums.deleteById(idAlbum);
+    }
+
 } // interface

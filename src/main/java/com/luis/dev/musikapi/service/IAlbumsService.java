@@ -6,9 +6,12 @@ import java.util.List;
 
 public interface IAlbumsService {
 
-    // GET: this method returns a list of Album Type, to searc in the DB all the records in the Album table
+    // GET: this method returns a list of Album Type, to search in the DB all the records in the Album table
     List<Album> buscarTodos();
 
     // POST:
     void guardar(Album album);
+
+    // DELETE
+    void eliminar(int idAlbum);
 } // interface
